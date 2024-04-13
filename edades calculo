@@ -1,0 +1,35 @@
+// /* --- While, for y switch-case--- */
+ let resp="si";
+ while(resp=="si"){
+     let nombre=prompt("Escribe el nombre de la persona");
+     let sexo=prompt("Escribe el sexo de la persona: (H/M)");
+     let edad=prompt("Escribe el rango de edad en años de la persona (1: 0 a 12 años; 2: 13 a 20; 3: 21 en adelante):) ");
+ if(sexo=="H"){
+switch(edad){
+         case "1":
+            window.alert("Te llevaré al parque a jugar");
+break;
+        case "2":
+         window.alert("Te llevaré de compras ");
+     break;
+       case "3":
+        window.alert("Te recomiendo hacer ejercicio");    
+ }
+    
+ }else  if(sexo=="M"){
+     switch(edad){
+        case "1":
+            window.alert("Te llevare a jugar");
+        break;
+     case "2":
+         window.alert("Te llevaré a practicar baile");
+     break;
+     case "3":
+         window.alert("Te llevare de compras ");    
+ }
+ }
+ else{
+    window.alert("No ingresaste un dato correcto en el campo 'sexo'");
+}
+ resp=prompt("¿Quieres registrar a otra persona? si/no:" );
+}
